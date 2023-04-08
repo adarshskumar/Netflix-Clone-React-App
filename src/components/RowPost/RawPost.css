@@ -1,0 +1,33 @@
+.row{
+    margin-left: 20px;
+    color: white;
+}
+
+.posters{
+    display: flex; /* multiple images vannalk row wise kanikkan */
+    padding: 20px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.posters::-webkit-scrollbar {
+    display: none;
+}
+
+.poster{
+    max-height: 250px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.smallPoster {
+    max-height: 150px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.poster:hover,.smallPoster:hover {
+    transform: scale(1.1);
+}
